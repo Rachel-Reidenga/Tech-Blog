@@ -23,17 +23,16 @@ CMS-style blog site, where developers can publish their blog posts and comment o
 
 ## Deployment
 
-Link to [Tech-Blog](https://rachel-reidenga.github.io/WeatherDashboard/)
+Link to [Tech-Blog]()
 
-Link to code on [GitHub](https://github.com/Rachel-Reidenga/WeatherDashboard/tree/Rachel-Reidenga.github.io/assests)
 
-Link to repository on [GitHub](https://github.com/Rachel-Reidenga/WeatherDashboard)
+Link to repository on [GitHub](https://github.com/Rachel-Reidenga/Tech-Blog/tree/main/)
 
 ## Screenshots
 
-![Top of Page](./screenshots/Top.png)
+![Top of Page]()
 
-![Bottom of Page](./screenshots/Bottom.png)
+![Bottom of Page]()
 
 ## Built With
 

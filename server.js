@@ -1,7 +1,23 @@
 const express = require('express');
 const routes = require('./routes/api');
+const homeRoutes = require('./home-routes.js');
+const dashboardRoutes = require('./dashboard-routes.js');
 const sequelize = require('./config/connections');
 const path = require('path');
+
+const router = require('express').Router();
+
+router.get("/", (req, res) => {
+  res.render("homepage");
+});
+
+router.get("/", (req, res) => {
+  res.render("dashboard");
+});
+
+module.exports = router;
+
+
 
 const helpers = require('./utils/helpers');
 

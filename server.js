@@ -1,7 +1,5 @@
 const express = require('express');
 const routes = require('./routes/api');
-const homeRoutes = require('./home-routes.js');
-const dashboardRoutes = require('./dashboard-routes.js');
 const sequelize = require('./config/connections');
 const path = require('path');
 

@@ -10,6 +10,7 @@
   <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </head>
 
+<body>
   <div class="wrapper">
     <header>
         <h1 class="has-text-black px-3 py-3 has-text-weight-bold">A Blog for Marvel Characters to Discuss Technology in NYC</h1>
@@ -26,34 +27,35 @@
         </nav>
     </header>
 
-    <main>
+        <main>
             {{{ body }}}
-    </main>
+        </main>
 
-    <footer class="footer rows pb-2">
-        <div class="row-is-full content has-text-centered">
-            <p>
-            <a href="/">homepage</a>{{#if loggedIn}} | 
-            <a href="/dashboard/">dashboard</a> | 
-            <a href="/dashboard/create/">create new post</a>
-            {{else}}
-             | <a href="/login/">login</a>
-            {{/if}}
-            </p>
-        </div>
-      <div class="row-is-full content has-text-centered">
-    <p>
-      <strong>MCU Tech Blog</strong> by <a href="https://github.com/settings/profile">Rachel R</a> | made with <a href="https://bulma.io/">bulma</a> | source code:
-      <a href="https://github.com/Rachel-Reidenga/Tech-Blog/tree/main"><i class="fab fa-github"></i></a> |  
-       <a href="reidenga@gmail.com"><i class="far fa-envelope"></i></a>
-    </p>
-  </div>
-    </footer>
-  </div>
+        <footer class="footer rows pb-2">
+            <div class="row-is-full content has-text-centered">
+                <p>
+                  <a href="/">homepage</a>{{#if loggedIn}} | 
+                  <a href="/dashboard/">dashboard</a> | 
+                  <a href="/dashboard/create/">create new post</a>
+                    {{else}}
+             |    <a href="/login/">login</a>
+                    {{/if}}
+                </p>
+            </div>
+          <div class="row-is-full content has-text-centered">
+             <p>
+                <strong>MCU Tech Blog</strong> by <a href="https://github.com/settings/profile">Rachel R</a> | made with <a href="https://bulma.io/">bulma</a> | source code:
+                <a href="https://github.com/Rachel-Reidenga/Tech-Blog/tree/main"><i class="fab fa-github"></i></a> |  
+                <a href="reidenga@gmail.com"><i class="far fa-envelope"></i></a>
+              </p>
+          </div>
+        </footer>
+  
 
-{{#if loggedIn}}
-<script src="/javascript/logout.js"></script>
-{{/if}}
+      {{#if loggedIn}}
+          <script src="/javascript/logout.js"></script>
+      {{/if}}
+  </div>
 </body>
 
 </html>

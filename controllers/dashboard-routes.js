@@ -73,7 +73,6 @@ router.get('/', withAuth, (req, res) => {
           return;
         }
   
-        // serialize the data
         const post = dbPostData.get({ plain: true });
 
         res.render('edit-post', {
@@ -115,7 +114,6 @@ router.get('/create/', withAuth, (req, res) => {
       ]
     })
       .then(dbPostData => {
-        // serialize data before passing to template
         const posts = dbPostData.map(post => post.get({ plain: true }));
         res.render('create-post', { posts, loggedIn: true });
       })
